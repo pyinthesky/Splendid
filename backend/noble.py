@@ -1,10 +1,17 @@
+import random
+
+
 class Noble (object):
     def __init__(self, points, black, red, white, blue, green):
-        self.cards = {'black': black,
-                      'red': red,
-                      'white': white,
-                      'blue': blue,
-                      'green': green}
+        self.points = points
+        self.cards  =   {
+                            'black': black,
+                            'red': red,
+                            'white': white,
+                            'blue': blue,
+                            'green': green,
+                        }
+
                       
 class NobleDeck(object):
     def __init__(self, number_of_players):
