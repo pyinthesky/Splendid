@@ -1,5 +1,10 @@
 import random
 
+def get_deck_list():
+    deck_list = [Tier1(), Tier2(), Tier3()]
+    for deck in deck_list:
+        deck.shuffle()
+    return deck_list
 
 class Card(object):
 

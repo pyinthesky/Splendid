@@ -13,6 +13,7 @@ class Player(object):
                                             "white" : 0,
                                             "blue"  : 0,
                                             "green" : 0,
+                                            "gold"  : 0,
                                         }
 
     def get_player_info(self):
