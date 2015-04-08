@@ -2,7 +2,8 @@ import json
 import threading
 
 from player import Player
-from deck import get_deck_list
+from noble  import NobleDeck
+from deck   import get_deck_list
 
 
 class Chips(object):
@@ -48,8 +49,9 @@ class Chips(object):
 
 class Board(object):
     def __init__(self, player_count):
-        self.deck_list = get_deck_list()
-        self.chip_pool = Chips(player_count)
+        self.deck_list  = get_deck_list()
+        self.noble_list = NobleDeck(player_count+1).noble_list
+        self.chip_pool  = Chips(player_count)
 
 
 class Game(threading.Thread):
